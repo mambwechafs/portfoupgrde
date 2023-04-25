@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mambwe Chafungwa</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ url_for('static', filename='img/android-chrome-192x192.png') }}" rel="android-chrome-192x192">
+  <link href="{{ url_for('static', filename='img/android-chrome-512x512.png') }}" rel="android-chrome-512x512">
+  
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  
+</head>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url({{ url_for('static', filename='img/hero-bg.jpg') }})">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <p class="display-6 color-d">Hello!</p>
+          <h1 class="hero-title mb-4">I am Mambwe Chafungwa</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Python Expert, Web Developer, Digital Marketer , Freelancer"></span></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="{{ url_for('static', filename='img/profile.png') }}" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Mambwe Chafungwa</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Full Stack Python Developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>chafungwamambwe@gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(260) 963777748</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Python</span> <span class="pull-right">100%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+        
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JavaScript</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Flask</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Django</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PostgreSQL</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>MySQL</span> <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Data Science</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Machine Learning</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+        
+                    <span>Search Engine Optimization(SEO)</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Social Media Marketing</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Email Marketing</span> <span class="pull-right">70%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Content Marketing</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Welcome to my portfolio website! I'm thrilled to share my journey as a self-taught Python developer turned entrepreneur with you.
+                    </p>
+                    <h2>My Background and Passion for Technology</h2>
+                    <p class="lead">
+                      My name is Mambwe Chafungwa, and I founded Esnile Innova Tech Ltd in February 2023. As a freelancer, I honed my skills in Python development and discovered a passion for using technology to create solutions that empower businesses and individuals to achieve their goals. With the launch of Esnile Innova Tech Ltd, I am excited to take this passion to the next level..
+                    </p>
+                    <h2>Esnile Innova Tech Ltd and Our Services</h2>
+                    <p class="lead">
+                      At Esnile Innova Tech Ltd, we specialize in custom software applications, web and mobile apps, and data analysis and machine learning services. As a self-taught developer, I understand the importance of staying up-to-date with the latest developments in the tech industry. That's why my team and I are committed to continuous learning and growth, and we are always seeking out new tools and techniques to enhance our services and deliver even greater value to our clients.
+                    </p>
+                    <h2>Collaboration for Success</h2>
+                    <p class="lead">
+                      Collaboration is key to success, and I believe that working closely with clients to fully understand their needs and goals is essential to delivering effective solutions. Whether you're a startup looking to build a Minimum Viable Product (MVP), or an established business seeking to upgrade your existing software infrastructure, my team and I are dedicated to helping you achieve your goals.
+                    </p>
+                    <p class="lead">
+                      As a Python developer and entrepreneur, I'm passionate about using technology to create positive change in the world. Thank you for visiting my portfolio website, and I look forward to connecting with you to bring your ideas to life.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                Below you can see some of the services I offer.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-img">
+                <img src="{{ url_for('static', filename='img/services/service-1.png') }}" alt="Web Design" class="img-fluid">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  My web design services are tailored to meet the unique needs of each client. I work closely with our clients to create modern, responsive websites that are optimized for both desktop and mobile devices. My designs are visually engaging, easy to navigate, and optimized for search engines. Whether you're looking to refresh an existing website or build a new one from scratch, I am here to help you achieve your online goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-img">
+                <img src="{{ url_for('static', filename='img/services/service-2.png') }}" alt="Web Development" class="img-fluid">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                 I focus on creating custom websites and web applications that are fast, secure, and scalable. I use modern web technologies and frameworks to deliver reliable, high-quality solutions that meet the unique needs of my clients. I have extensive experience in front-end and back-end development, database design, and integration with third-party services. Whether you need a simple landing page or a complex web application, I am here to turn your ideas into reality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-img">
+                <img src="{{ url_for('static', filename='img/services/service-3.png') }}" alt="Data Visualization" class="img-fluid">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Data Visualization</h2>
+                <p class="s-description text-center">
+                I use the power of Python libraries to help you gain insights and make better decisions. I specialize in creating interactive visualizations that enable you to explore your data in new and exciting ways. Using tools such as Matplotlib, Seaborn, and Plotly, I transform complex data into intuitive and informative charts, graphs, and dashboards. Whether you need to analyze sales trends, track user behavior, or visualize complex scientific data, I can help you present your data in a compelling and meaningful way.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-img">
+                <img src="{{ url_for('static', filename='img/services/service-4.png') }}" alt="Machine Learning" class="img-fluid">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Machine Learning</h2>
+                <p class="s-description text-center">
+                 I help businesses leverage the power of data to gain a competitive advantage. I specialize in creating custom machine learning models that enable you to automate tasks, make predictions, and identify patterns in your data. I have expertise in a wide range of machine learning algorithms, including supervised and unsupervised learning, deep learning, and natural language processing. Whether you need to predict customer behavior, optimize operations, or build a recommendation engine, my machine learning solutions can help you unlock the full potential of your data
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-img">
+                <img src="{{ url_for('static', filename='img/services/service-5.png') }}" alt="Scripting" class="img-fluid">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Scripting</h2>
+                <p class="s-description text-center">
+                 I provide customized automation solutions that help you save time and increase efficiency. I specialize in creating scripts that automate repetitive tasks, process data, and integrate with third-party services. I have expertise in a wide range of Python libraries and frameworks, including Pandas, Requests, Selenium, and Flask. Whether you need to scrape data from websites, automate data entry, or build a custom web application, my Python scripting solutions can help you streamline your workflow and improve your bottom line.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-img">
+                <img src="{{ url_for('static', filename='img/services/service-6.png') }}" alt="Digital Marketing Services" class="img-fluid">
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Digital Marketing Services</h2>
+                <p class="s-description text-center">
+                 I help businesses reach and engage with their target audience through strategic and data-driven campaigns. I specialize in creating custom digital marketing strategies that are tailored to your unique business goals. I have expertise in a wide range of digital marketing channels, including Search Engine Optimization (SEO), Pay-Per-Click (PPC) advertising, Social Media Marketing (SMM), Email Marketing, and Content Marketing. Whether you need to improve your website traffic, generate more leads, or increase your brand awareness, my digital marketing solutions can help you achieve your desired results and grow your business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+   
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                 Here you will find a selection of my latest projects that showcase my skills and experience as a full-stack developer.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="{{ url_for('static', filename='img/work-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="{{ url_for('static', filename='img/work-1.jpg') }}" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Esnile Innova Tech Ltd Website</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">10 April. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.esnileinnova.tech/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="{{ url_for('static', filename='img/work-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="{{ url_for('static', filename='img/work-2.jpg') }}" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Eco-First Innovations Environmental Consultancy Firm Website</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">31 Mar. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://ecofirstinnovationsecf.com/"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="{{ url_for('static', filename='img/work-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="{{ url_for('static', filename='img/work-3.jpg') }}" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">JPG to PNG Image Converter</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Python</span> / <span class="w-date">3 Nov. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://github.com/mambwechafs/passwrd-strngth-chck"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="{{ url_for('static', filename='img/work-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="{{ url_for('static', filename='img/work-4.jpg') }}" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Web Scraper</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Python</span> / <span class="w-date">3 Nov. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://github.com/mambwechafs/hckrnws"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="{{ url_for('static', filename='img/work-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="{{ url_for('static', filename='img/work-5.jpg') }}" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Password Checker</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Python</span> / <span class="w-date">31 Oct. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://github.com/mambwechafs/passwrd-strngth-chck"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="{{ url_for('static', filename='img/work-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="{{ url_for('static', filename='img/work-6.jpg') }}" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Email Sender with Python</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Python</span> / <span class="w-date">31 Oct. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://github.com/mambwechafs/emailsndr"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url({{ url_for('static', filename='img/overlay-bg.jpg') }})">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Let's Build Something Together
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="/send_message" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Connect With Me
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Ready to take your business to the next level? Contact me today to discuss your project and see how I can help you achieve your goals. Let's work together to create a custom solution that meets your unique needs and drives real results. Don't wait, get in touch now and let's get started!
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> Kitwe, Copperbelt, Zambia</li>
+                        <li><span class="bi bi-phone"></span> (260) 963777748</li>
+                        <li><span class="bi bi-envelope"></span> chafungwamambwe@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.facebook.com/mambwechafs/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/mambwechafs/?fbclid=IwAR0MnxvwGVVrae_gRT5F1TIBur1Maj9U0nhepNmf_QbbUxs57NCKjisYbBA"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://twitter.com/ChafungwaMambwe?fbclid=IwAR2KHVqx-EfwmYWWVpCJmDes9QdJFZ4XT1U-1R19IPldufQDXBJoBTgR_Bc"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/mambwe-chafungwa/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/mambwechafs"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong> Mambwe Chafungwa </strong>. All Rights Reserved <span id="current-year"></span></p>
+            <div class="credits">
+            
+              Designed by <a href="https://www.esnileinnova.tech/">Esnile Innova Tech Limited</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/typed.js/typed.min.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='/vendor/php-email-form/validate.js') }}"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+  <script>
+$(function() {
+    $('#contact-form').submit(function(event) {
+        event.preventDefault(); // prevent form submission
+        
+        // submit form data using AJAX
+        $.ajax({
+            url: $(this).attr('action'),
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function(response) {
+                // display success message
+                $('#contact-message').removeClass('alert-danger').addClass('alert-success').text(response).fadeIn();
+            },
+            error: function() {
+                // display error message
+                $('#contact-message').removeClass('alert-success').addClass('alert-danger').text('An error occurred while sending your message. Please try again later.').fadeIn();
+            }
+        });
+    });
+});
+</script>
+<script>
+		document.getElementById("current-year").innerHTML = new Date().getFullYear();
+	</script>
+</body>
+
+</html>
